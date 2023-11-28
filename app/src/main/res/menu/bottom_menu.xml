@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        android:id="@+id/home2"/>
+
+
+    <item
+        android:icon="@drawable/baseline_edit_note_24"
+        android:title="Note"
+        android:id="@+id/chapterDetailsFragment"/>
+
+    <item
+        android:title="Videos"
+        android:icon="@drawable/baseline_video_library_24"
+        android:id="@+id/videos"
+        />
+
+
+    <item
+        android:title="Certificate"
+        android:icon="@drawable/baseline_pages_24"
+        android:id="@+id/certificate"
+        />
+    <item
+        android:title="Setting"
+        android:icon="@drawable/baseline_settings_24"
+        android:id="@+id/setting"
+        />
+
+</menu>

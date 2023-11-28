@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nevigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.shrutipandit.computercourse.ui.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_chapterDetailsFragment"
+            app:destination="@id/chapterDetailsFragment" />
+        <action
+            android:id="@+id/action_home2_to_videos"
+            app:destination="@id/videos" />
+        <action
+            android:id="@+id/action_home2_to_certificate"
+            app:destination="@id/certificate" />
+        <action
+            android:id="@+id/action_home2_to_queues_list"
+            app:destination="@id/queue_list" />
+
+    </fragment>
+
+
+<!--    start action-->
+
+    <fragment
+        android:id="@+id/videos"
+        android:name="com.shrutipandit.computercourse.ui.VideosFragment"
+        android:label="Videos_List"
+        tools:layout="@layout/fragment_seen_videos">
+
+
+        <action
+            android:id="@+id/action_home2_to_seenVideosFragment"
+            app:destination="@id/seenVideosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/certificate"
+        android:name="com.shrutipandit.computercourse.ui.CertificateFragment"
+        android:label="Certificate"
+        tools:layout="@layout/fragment_certificate" >
+
+        <action
+            android:id="@+id/action_certificate_to_queue_list3"
+            app:destination="@id/queue_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.shrutipandit.computercourse.ui.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/chapterNotesDetailsFragment"
+        android:name="com.shrutipandit.computercourse.ui.ChapterNotesDetailsFragment"
+        android:label="Chapter_Notes"
+        tools:layout="@layout/fragment_chapter_notes_details">
+        <argument
+            android:name="chapterName"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/seenVideosFragment"
+        android:name="com.shrutipandit.computercourse.ui.SeenVideosFragment"
+        android:label="seenVideos"
+        tools:layout="@layout/fragment_seen_videos" />
+
+
+    <fragment
+        android:id="@+id/chapterDetailsFragment"
+        android:name="com.shrutipandit.computercourse.ui.ChapterDetailsFragment"
+        android:label="Chapter_Name"
+        tools:layout="@layout/fragment_chapter_details">
+        <action
+            android:id="@+id/action_chapterDetailsFragment_to_chapterNotesDetailsFragment"
+            app:destination="@id/chapterNotesDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/queue_list"
+        android:name="com.shrutipandit.computercourse.ui.queues_list"
+        android:label="Queues_List"
+        tools:layout="@layout/fragment_queues_list">
+        <action
+            android:id="@+id/action_queues_list_to_QueueSeen"
+            app:destination="@id/QueueSeen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/QueueSeen"
+        android:name="com.shrutipandit.computercourse.ui.Queues_SeenFragment"
+        android:label="Queues" />
+
+
+</navigation>
