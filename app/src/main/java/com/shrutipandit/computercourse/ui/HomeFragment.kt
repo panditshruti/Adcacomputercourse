@@ -20,11 +20,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private lateinit var viewPager: ViewPager
     private lateinit var imageSliderAdapter: ImageSliderAdapter
     private val images = intArrayOf(
-        R.drawable.pbg1,
-        R.drawable.bb1,
-        R.drawable.bb2,
-        R.drawable.bb4,
-        R.drawable.bb3
+        R.drawable.comp1,
+        R.drawable.comp2,
+        R.drawable.comp5,
+        R.drawable.comp3,
+        R.drawable.comp2
     )
     // Timer and handler for auto-scrolling
     private var currentPage = 0

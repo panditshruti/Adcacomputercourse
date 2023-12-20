@@ -40,7 +40,7 @@ import com.shrutipandit.computercourse.databinding.ActivityMainBinding
               )
           )
           binding.toolbar.setupWithNavController(navController, appBarConfiguration)
-          binding.bottomNevigation.setupWithNavController(navController)
+//          binding.bottomNevigation.setupWithNavController(navController)
 
       }
 
