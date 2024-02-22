@@ -4,21 +4,19 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.ArrayAdapter
-import androidx.navigation.fragment.findNavController
 import com.shrutipandit.computercourse.R
-import com.shrutipandit.computercourse.databinding.FragmentCertificateBinding
-import com.shrutipandit.computercourse.databinding.FragmentChapterDetailsBinding
+import com.shrutipandit.computercourse.databinding.FragmentTypingBinding
 
 
-class CertificateFragment : Fragment(R.layout.fragment_certificate) {
+class TypingFragment : Fragment(R.layout.fragment_typing) {
 
-    private lateinit var binding: FragmentCertificateBinding
+    private lateinit var binding: FragmentTypingBinding
     private lateinit var arrayList: ArrayList<String>
     private lateinit var arrayAdapter: ArrayAdapter<String>
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentCertificateBinding.bind(view)
+        binding = FragmentTypingBinding.bind(view)
 
 //        arrayList = arrayListOf()
 //        arrayList.add("Ch-1 Computer Fundamental")

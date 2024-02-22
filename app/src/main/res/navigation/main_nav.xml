@@ -41,9 +41,9 @@
     </fragment>
     <fragment
         android:id="@+id/certificate"
-        android:name="com.shrutipandit.computercourse.ui.CertificateFragment"
-        android:label="Certificate"
-        tools:layout="@layout/fragment_certificate" >
+        android:name="com.shrutipandit.computercourse.ui.TypingFragment"
+        android:label="TypingCode"
+        tools:layout="@layout/fragment_typing">
 
         <action
             android:id="@+id/action_certificate_to_queue_list3"

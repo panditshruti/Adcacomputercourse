@@ -20,7 +20,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private lateinit var viewPager: ViewPager
     private lateinit var imageSliderAdapter: ImageSliderAdapter
     private val images = intArrayOf(
-        R.drawable.comp1,
+        R.drawable.sscom,
         R.drawable.comp2,
         R.drawable.comp5,
         R.drawable.comp3,
@@ -28,8 +28,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     )
     // Timer and handler for auto-scrolling
     private var currentPage = 0
-    private val DELAY_MS: Long = 3000 // Delay in milliseconds before the next page is shown.
-    private val PERIOD_MS: Long = 3000 // Interval time to repeat.
+    private val DELAY_MS: Long = 6000 // Delay in milliseconds before the next page is shown.
+    private val PERIOD_MS: Long = 6000 // Interval time to repeat.
 
     private val handler = Handler(Looper.getMainLooper())
     private val update = Runnable {
@@ -42,7 +42,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding= FragmentHomeBinding.bind(view)
-
         // Corrected binding for viewPager
         viewPager = binding.viewPager
         imageSliderAdapter = ImageSliderAdapter(requireContext(), images)

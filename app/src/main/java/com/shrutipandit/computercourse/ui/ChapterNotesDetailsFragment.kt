@@ -28,6 +28,7 @@ class ChapterNotesDetailsFragment : Fragment(R.layout.fragment_chapter_notes_det
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentChapterNotesDetailsBinding.bind(view)
+
         val argumentString = args.chapterName
         db = FirebaseDatabase.getInstance().reference.child(argumentString)
         arrayList = arrayListOf()
